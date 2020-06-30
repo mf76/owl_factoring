@@ -1,0 +1,181 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  background-repeat: no-repeat;
+  overflow-wrap: break-word;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+p,
+div,
+span,
+img,
+a,
+table,
+tr,
+th,
+td {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Yu Gothic", YuGothic, Verdana, Meiryo, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.85714;
+  height: 100%;
+  letter-spacing: 0.05em;
+  color: #222222;
+  -webkit-font-smoothing: antialiased;
+  overflow-y: scroll;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+article,
+header,
+footer,
+aside,
+figure,
+figcaption,
+nav,
+section,
+img,
+video,
+a {
+  display: block;
+}
+
+img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+ol,
+ul {
+  list-style: none;
+  list-style-type: none;
+}
+
+input,
+button,
+select,
+textarea {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-appearance: none;
+  max-width: 100%;
+  outline: 0;
+  border: 1px solid #b7f4f9;
+  font-size: 1.7rem;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.pcView {
+  display: block !important;
+}
+
+@media (max-width: 568px) {
+  .pcView {
+    display: none !important;
+  }
+}
+
+.spView {
+  display: none !important;
+}
+
+@media (max-width: 568px) {
+  .spView {
+    display: block !important;
+  }
+}
+
+.widthKeeper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+}
+
+@media (max-width: 768px) {
+  .widthKeeper {
+    max-width: 95%;
+  }
+}
+
+.jelly {
+  -webkit-animation: gelatine 1s infinite;
+          animation: gelatine 1s infinite;
+}
+
+@-webkit-keyframes gelatine {
+  from,
+  to {
+    -webkit-transform: scale(0.95, 0.95);
+            transform: scale(0.95, 0.95);
+  }
+  50% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+@keyframes gelatine {
+  from,
+  to {
+    -webkit-transform: scale(0.95, 0.95);
+            transform: scale(0.95, 0.95);
+  }
+  50% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+/*# sourceMappingURL=main.css.map */

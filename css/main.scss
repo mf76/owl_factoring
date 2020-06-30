@@ -1,0 +1,193 @@
+@charset "UTF-8";
+// ここから初期設定
+$pc: #1a1a1a;
+$sc: #052e56;
+$ac: #f15d6b;
+$dc: #42423e;
+$db: #b7f4f9;
+
+// レスポンシブの設定
+$widthPC: 1240px; //PC
+$widthTab: 768px; //タブレット
+$widthSp: 568px; //スマートフォン
+@mixin pcw {
+  @media (min-width: ($widthPC)) {
+    @content;
+  }
+}
+@mixin tab {
+  @media (max-width: ($widthTab)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media (max-width: ($widthSp)) {
+    @content;
+  }
+}
+@mixin spl {
+  @media (max-width: 375px) {
+    @content;
+  }
+}
+@mixin spm {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
+@mixin ie11 {
+  @media all and (-ms-high-contrast: none) {
+    @content;
+  }
+}
+
+// ここまで初期設定
+
+// リセット
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  background-repeat: no-repeat;
+  overflow-wrap: break-word;
+}
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+p,
+div,
+span,
+img,
+a,
+table,
+tr,
+th,
+td {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  scroll-behavior: smooth;
+}
+html {
+  min-height: 100%;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans",
+    "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Yu Gothic", YuGothic, Verdana, Meiryo, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.85714;
+  height: 100%;
+  letter-spacing: 0.05em;
+  color: rgb(34, 34, 34);
+  -webkit-font-smoothing: antialiased;
+  overflow-y: scroll;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+article,
+header,
+footer,
+aside,
+figure,
+figcaption,
+nav,
+section,
+img,
+video,
+a {
+  display: block;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+}
+ol,
+ul {
+  list-style: none;
+  list-style-type: none;
+}
+input,
+button,
+select,
+textarea {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-appearance: none;
+  max-width: 100%;
+  outline: 0;
+  border: 1px solid $db;
+  font-size: 1.7rem;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+
+// 汎用
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.pcView {
+  display: block !important;
+  @include sp {
+    display: none !important;
+  }
+}
+.spView {
+  display: none !important;
+  @include sp {
+    display: block !important;
+  }
+}
+.widthKeeper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  @include tab {
+    max-width: 95%;
+  }
+}
+
+.jelly {
+  -moz-animation: gelatine 1s infinite;
+  animation: gelatine 1s infinite;
+}
+
+@keyframes gelatine {
+  from,
+  to {
+    transform: scale(0.95, 0.95);
+  }
+
+  50% {
+    transform: scale(1, 1);
+  }
+}
