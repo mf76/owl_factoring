@@ -7,6 +7,10 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+<section id="top">
+  <div class="widthKeeper">
 
+  </div>
+</section>
 </body>
 </html>
