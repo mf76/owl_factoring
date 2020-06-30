@@ -19,15 +19,23 @@
     <div class="widthKeeper">
       <h2><img src="img/contact__img_title.svg" alt="資金調達が可能かすぐにわかります"></h2>
       <div class="contactBox flex">
-        <div class="left">
+        <div class="contactBoxPanel left">
+          <h3>無料診断フォーム</h3>
           <button><img src="img/btn__check.svg" alt=""></button>
         </div>
-        <div class="right">
-          <button><img src="img/contact__img_dial.svg" alt=""></button>
-          <button><img src="img/contact__img_line.svg" alt=""></button>
+        <div class="contactBoxPanel right">
+          <h3>お問い合わせ</h3>
+          <div class="flex">
+            <button><img src="img/contact__img_dial.svg" alt=""></button>
+            <button><img src="img/contact__img_line.svg" alt=""></button>
+          </div>
         </div>
       </div>
     </div>
+  </section>
+  <section id="caution">
+    <img src="img/caution__img_border.svg" alt="">
+    <img src="img/caution__img_border.svg" alt="">
   </section>
 </body>
 </html>

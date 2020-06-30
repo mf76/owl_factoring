@@ -71,6 +71,7 @@ nav,
 section,
 img,
 video,
+button,
 a {
   display: block;
 }
@@ -110,6 +111,12 @@ button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .clearfix:after {
@@ -179,23 +186,79 @@ button {
   }
 }
 
-section #top {
+section {
+  padding: 50px 0;
+}
+
+section#top {
   background-image: url(../img/bg_top.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+
+section#top .widthKeeper {
+  position: relative;
+  height: 700px;
+}
+
+section#top .widthKeeper img.img01 {
+  width: 50%;
+  position: absolute;
+  top: 5%;
+}
+
+section#top .widthKeeper img.img02 {
+  position: absolute;
+  right: 0;
+  width: 45%;
+  top: 47%;
+}
+
+section#top .widthKeeper img.img03 {
+  position: absolute;
+  right: 0;
+  width: 45%;
+  top: 63%;
+}
+
+section#top .widthKeeper button {
+  position: absolute;
+  right: 0;
+  width: 300px;
+  bottom: 20px;
+}
+
+section#contact {
+  background-image: url(../img/bg_contact.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-section #top .widthKeeper {
-  position: relative;
+section#contact .widthKeeper h2 {
+  width: 80%;
+  margin: 0 auto;
 }
 
-section #top .widthKeeper img {
-  position: absolute;
-}
-
-section #top .widthKeeper img.img01 {
+section#contact .widthKeeper .contactBox .contactBoxPanel {
   width: 50%;
-  position: absolute;
-  top: 5%;
+  background: #fff;
+  margin: 30px;
+  height: 350px;
+  -webkit-box-shadow: #868686 1px 1px 4px;
+          box-shadow: #868686 1px 1px 4px;
+  padding: 20px 40px;
+}
+
+section#contact .widthKeeper .contactBox .contactBoxPanel h3 {
+  color: #656565;
+}
+
+section#contact .widthKeeper .contactBox .contactBoxPanel button {
+  margin: 10px auto;
+}
+
+section#caution {
+  padding: 0;
 }
 /*# sourceMappingURL=main.css.map */

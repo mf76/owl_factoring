@@ -111,6 +111,7 @@ nav,
 section,
 img,
 video,
+button,
 a {
   display: block;
 }
@@ -147,6 +148,10 @@ button {
 }
 
 // 汎用
+.flex {
+  display: flex;
+}
+
 .clearfix {
   &:after {
     content: "";
@@ -193,19 +198,71 @@ button {
 }
 
 //　ここからアウル経済
-section #top {
+section {
+  padding: 50px 0;
+}
+section#top {
   background-image: url(../img/bg_top.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 0;
   .widthKeeper {
     position: relative;
+    height: 700px;
     img {
-      position: absolute;
       &.img01 {
         width: 50%;
         position: absolute;
         top: 5%;
       }
+      &.img02 {
+        position: absolute;
+        right: 0;
+        width: 45%;
+        top: 47%;
+      }
+      &.img03 {
+        position: absolute;
+        right: 0;
+        width: 45%;
+        top: 63%;
+      }
+    }
+    button {
+      position: absolute;
+      right: 0;
+      width: 300px;
+      bottom: 20px;
     }
   }
+}
+section#contact {
+  background-image: url(../img/bg_contact.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  .widthKeeper {
+    h2 {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .contactBox {
+      .contactBoxPanel {
+        width: 50%;
+        background: #fff;
+        margin: 30px;
+        height: 350px;
+        box-shadow: #868686 1px 1px 4px;
+        padding: 20px 40px;
+        h3 {
+          color: #656565;
+        }
+        button {
+          margin: 10px auto;
+        }
+      }
+    }
+  }
+}
+section#caution {
+  padding: 0;
 }
