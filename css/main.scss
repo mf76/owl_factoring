@@ -40,6 +40,18 @@ $widthSp: 568px; //スマートフォン
   }
 }
 
+@font-face {
+  font-family: "newRodin";
+  src: url(../font/NewRodin-B.woff2) format("woff2");
+  src: url(../font/NewRodin-B.woff) format("woff");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "newRodin";
+  src: url(../font/NewRodin-M.woff2) format("woff2");
+  src: url(../font/NewRodin-M.woff) format("woff");
+  font-weight: normal;
+}
 // ここまで初期設定
 
 // リセット
@@ -82,7 +94,7 @@ html {
   overflow-x: hidden;
 }
 body {
-  font-family: "M PLUS 1p", "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans",
+  font-family: "newRodin", "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans",
     "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Yu Gothic", YuGothic, Verdana, Meiryo, sans-serif;
   font-size: 1.2rem;
   line-height: 1.8rem;
