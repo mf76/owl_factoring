@@ -1,10 +1,9 @@
 @charset "UTF-8";
 // ここから初期設定
-$pc: #1a1a1a;
-$sc: #052e56;
-$ac: #f15d6b;
-$dc: #42423e;
+
 $db: #b7f4f9;
+$green: #06663f;
+$grey: #707070;
 
 // レスポンシブの設定
 $widthPC: 1240px; //PC
@@ -83,14 +82,11 @@ html {
   overflow-x: hidden;
 }
 body {
-  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans",
+  font-family: "M PLUS 1p", "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans",
     "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Yu Gothic", YuGothic, Verdana, Meiryo, sans-serif;
   font-size: 1.2rem;
-  line-height: 1.85714;
-  height: 100%;
-  letter-spacing: 0.05em;
-  color: rgb(34, 34, 34);
-  -webkit-font-smoothing: antialiased;
+  line-height: 1.8rem;
+  color: $grey;
   overflow-y: scroll;
 }
 a {
@@ -201,11 +197,76 @@ button {
 .flip-horizontal {
   transform: scale(-1, 1);
 }
-
-//　アウル経済の個別
-section {
-  padding: 50px 0;
+.greenTitle {
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  .widthKeeper {
+    min-height: 10rem;
+    h2.greenBack {
+      position: absolute;
+      color: #fff;
+      font-weight: bold;
+      font-size: 2.2rem;
+      padding: 30px 50px;
+      text-align: center;
+      line-height: 3.2rem;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      z-index: 2;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+    .transparentGreen {
+      position: absolute;
+      background-color: $green;
+      mix-blend-mode: multiply;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      width: 60%;
+      height: 10rem;
+      z-index: 1;
+    }
+  }
 }
+.greenH2 {
+  color: $green;
+  font-weight: bold;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+.paleGreenBg {
+  background: -moz-linear-gradient(0.66% 3.75% -32deg, rgba(227, 242, 233, 1) 0%, rgba(206, 232, 217, 1) 100%);
+  background: -webkit-linear-gradient(-32deg, rgba(227, 242, 233, 1) 0%, rgba(206, 232, 217, 1) 100%);
+  background: -webkit-gradient(
+    linear,
+    0.66% 3.75%,
+    100.06% 96.92%,
+    color-stop(0, rgba(227, 242, 233, 1)),
+    color-stop(1, rgba(206, 232, 217, 1))
+  );
+  background: -o-linear-gradient(-32deg, rgba(227, 242, 233, 1) 0%, rgba(206, 232, 217, 1) 100%);
+  background: -ms-linear-gradient(-32deg, rgba(227, 242, 233, 1) 0%, rgba(206, 232, 217, 1) 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#E3F2E9', endColorstr='#CEE8D9' ,GradientType=0)";
+  background: linear-gradient(122deg, rgba(227, 242, 233, 1) 0%, rgba(206, 232, 217, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#E3F2E9',endColorstr='#CEE8D9' , GradientType=1);
+}
+.posR {
+  position: relative;
+}
+section {
+  padding: 100px 0;
+}
+//　アウル経済の個別
+
 section#top {
   background-image: url(../img/bg_top.jpg);
   background-size: cover;
@@ -273,7 +334,7 @@ section#caution {
   .widthKeeper {
     .flex {
       justify-content: space-between;
-      padding: 50px 0;
+      padding: 100px 0;
       & > div {
         width: 48%;
         &.right {
@@ -290,7 +351,276 @@ section#caution {
               padding-bottom: 10px;
             }
           }
+          p {
+            a {
+              text-align: right;
+            }
+          }
         }
+      }
+    }
+  }
+}
+section#why {
+  padding: 0;
+  #cantChoose {
+    background-image: url(../img/bg_cantChoose.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 70px 0;
+    position: relative;
+    img {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .posA {
+      position: absolute;
+      width: 180px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: -40px;
+    }
+  }
+  .greenTitle {
+    background-image: url(../img/bg_why.jpg);
+  }
+  #whyFlex {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 70px 0;
+    img {
+      width: 48%;
+      margin-bottom: 30px;
+    }
+  }
+  .paleGreenBg {
+    .widthKeeper {
+      div {
+        width: 50%;
+        &.left {
+          padding: 50px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          p {
+            color: #707070;
+          }
+          ul {
+            li {
+              font-weight: bold;
+              font-size: 1.6rem;
+              color: $green;
+              margin: 12px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+section#flow {
+  .widthKeeper {
+    p {
+      text-align: center;
+      color: $grey;
+      font-size: 1.5rem;
+      margin-bottom: 50px;
+    }
+    .flex {
+      justify-content: space-between;
+      margin-bottom: 50px;
+      div {
+        width: 24%;
+        position: relative;
+        &:after {
+          content: "";
+          background-image: url(../img/flow__img_arrow.svg);
+          width: 50px;
+          height: 50px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          right: -40px;
+          top: 0;
+          bottom: 0;
+          position: absolute;
+          margin: auto;
+          z-index: 5;
+        }
+        &:last-of-type:after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+section#staff {
+  .widthKeeper {
+    .staffBox {
+      background-color: #fff;
+      padding: 30px 50px;
+      position: relative;
+      justify-content: space-between;
+      margin-bottom: 50px;
+      h3 {
+        position: absolute;
+        background: $green;
+        color: #fff;
+        padding: 5px 20px;
+        top: -20px;
+        left: -10px;
+      }
+      .staffPic {
+        width: 20%;
+        margin-top: 10px;
+      }
+      .staffCap {
+        width: 75%;
+        h4 {
+          margin-bottom: 20px;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+section#ceo {
+  .widthKeeper {
+    justify-content: space-between;
+    .left {
+      width: 60%;
+      padding-right: 70px;
+      margin-top: 100px;
+      h3 {
+        margin-bottom: 30px;
+      }
+    }
+    .right {
+      width: 38%;
+      img {
+        margin-bottom: 30px;
+        &:last-of-type {
+          width: 55%;
+          float: right;
+        }
+      }
+    }
+  }
+}
+section#faq {
+  .greenTitle {
+    background-image: url(../img/bg_faq.jpg);
+    background-position: center;
+  }
+  #faqBox {
+    ul {
+      margin: 50px 0;
+      li {
+        background: #f2f2f2;
+        padding: 25px 50px;
+        margin-bottom: 20px;
+        details {
+          transition: 0.5s;
+          cursor: pointer;
+          summary {
+            font-size: 1.4rem;
+            font-weight: bold;
+            &:focus {
+              outline: none;
+            }
+          }
+          p {
+            background: #fafafa;
+            padding: 20px;
+            margin-top: 20px;
+          }
+        }
+        details[open] p {
+          animation: fadeIn 0.5s ease;
+        }
+        @keyframes fadeIn {
+          0% {
+            opacity: 0; /* 透明 */
+            transform: translateY(-10px); /* 上から表示 */
+          }
+          100% {
+            opacity: 1;
+            transform: none;
+          }
+        }
+      }
+    }
+  }
+}
+section#company {
+  .greenTitle {
+    background-image: url(../img/bg_company.jpg);
+    background-position: 0px -140px;
+  }
+  #companyInfo {
+    margin-top: 50px;
+    padding: 0 50px;
+    dl {
+      border-bottom: 1px solid #e6e6e6;
+      justify-content: space-between;
+      width: 60%;
+      margin: 0 auto;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      dt {
+        font-weight: bold;
+        width: 28%;
+        padding-left: 20px;
+        color: #6b6b6b;
+      }
+      dd {
+        width: 70%;
+      }
+    }
+  }
+}
+footer {
+  background-image: url(../img/bg_footer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  &::after {
+    content: "";
+    background-color: rgba(42, 68, 102, 0.85);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  .widthKeeper {
+    height: 300px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 5;
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-bottom: 20px;
+    }
+    .left {
+      width: 30%;
+      img {
+        width: 100px;
+        margin-bottom: 20px;
+      }
+      p {
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+    }
+    .right {
+      width: 30%;
+      a {
+        color: #fff;
+        text-align: right;
       }
     }
   }
