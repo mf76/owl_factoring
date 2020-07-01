@@ -15,7 +15,7 @@
       <img src="img/top__img01.svg" class="img01" alt="本当に安心できる資金調達なら">
       <img src="img/top__img02.svg" class="img02" alt="アウル経済の請求書買取り">
       <img src="img/top__img03.svg" class="img03" alt="業界最安水準手数料">
-      <button class="button"><img src="img/btn__top.svg" alt="無料相談はこちら"></button>
+      <button class="button jelly"><img src="img/btn__top.svg" alt="無料相談はこちら"></button>
     </div>
   </section>
   <section id="contact">
@@ -24,14 +24,58 @@
       <div class="contactBox flex">
         <div class="contactBoxPanel left">
           <h3>無料診断フォーム</h3>
-          <button><img src="img/btn__check.svg" alt=""></button>
+          <form action="mail.php" method="post">
+            <p>
+              <label>
+                <span>買取希望の請求書の額面</span>
+                <input type="text" name="買取希望の請求書の額面" placeholder="例）500万円" required>
+              </label>
+            </p>
+            <p>
+              <label>
+                <span>会社・組織名</span>
+                <input type="text" name="会社・組織名" placeholder="例）株式会社アウル">
+              </label>
+            </p>
+            <p>
+              <label>
+                <span>お名前</span>
+                <input type="text" name="お名前" placeholder="例）梟 太郎">
+              </label>
+            </p>
+            <p>
+              <label>
+                <span>お電話番号</span>
+                <input type="tel" name="お電話番号" placeholder="例）03-0000-0000">
+              </label>
+            </p>
+            <p>
+              <label>
+                <span>Email</span>
+                <input type="email" name="Email" placeholder="例）owl@owleconomy.jp" required>
+              </label>
+            </p>
+
+            <button><input type="submit" name="btnSubmit" value="診断する"></button>
+          </form>
+
         </div>
         <div class="contactBoxPanel right">
           <h3>お問い合わせ</h3>
           <p>営業時間内はお電話または<br>LINEお問い合わせが便利です</p>
-          <div class="flex">
-            <button><img src="img/contact__img_dial.svg" alt=""></button>
-            <button><a href="https://page.line.me/065gwzlz"><img src="img/contact__img_line.svg" alt=""></a></button>
+          <div class="btnArea">
+            <button>
+              <a href="">
+                <img src="img/contact__img_dial.svg" alt="">
+                <p>0120-800-112</p>
+              </a>
+            </button>
+            <button>
+              <a href="https://page.line.me/065gwzlz" target="_blank">
+                <img src="img/contact__img_line.svg" alt="">
+                <p>お問い合わせ</p>
+              </a>
+            </button>
           </div>
         </div>
       </div>
@@ -98,14 +142,14 @@
   <section id="flow">
     <div class="widthKeeper">
       <h2 class="greenH2">ご利用の流れ</h2>
-      <p>お申込み後、入金までの流れをご紹介します。</p>
+      <p>お申込み後、入金までの<br class="spView">流れをご紹介します。</p>
       <div class="flex">
         <div><img src="img/flow__img02.svg" alt=""></div>
         <div><img src="img/flow__img01.svg" alt=""></div>
         <div><img src="img/flow__img03.svg" alt=""></div>
         <div><img src="img/flow__img04.svg" alt=""></div>
       </div>
-      <p>ご利用に際して、ご不明点やご要望があれば遠慮なくお申し付けください。</p>
+      <p>ご利用に際して、ご不明点や<br class="spView">ご要望があれば<br class="spView">遠慮なくお申し付けください。</p>
     </div>
   </section>
   <section id="voice">
@@ -203,7 +247,7 @@
         <h3>2年目／元金融コンサル</h3>
         <div class="staffPic"><img src="img/staff_03.jpg" alt=""></div>
         <div class="staffCap">
-          <h4>金融コンサルで培った経験を活かして、<br>お客様の資金繰り改善に尽力します！</h4>
+          <h4>金融コンサルで培った経験を活かして、<br class="pcView">お客様の資金繰り改善に尽力します！</h4>
           <p>前職は個人のお客様を対象にした金融コンサルタントをしていました。お客様の大切な資産を、お客様の希望される方針に寄り添って運用をお手伝いさせていただく仕事です。<br>
             その後ファクタリングを事業とするアウル経済に転職しましたが、日本では資金調達の選択肢が豊富にあることがあまり知られていません。ファクタリングは欧米では至ってスタンダードな資金調達方法です。大切なお客様のビジネスを止めない為に、資金調達を含めた総合的な経営サポートをさせていただければと思っています。</p>
         </div>
@@ -212,7 +256,7 @@
         <h3>4年目／起業経験あり</h3>
         <div class="staffPic"><img src="img/staff_06.jpg" alt=""></div>
         <div class="staffCap">
-          <h4>失敗を恐れず行動する中小経営者の方を<br>
+          <h4>失敗を恐れず行動する中小経営者の方を<br class="pcView">
             サポートさせていただきたいです！
           </h4>
           <p>フリーランスで起業支援コンサルタントをしていました。多くのスモールビジネスの立ち上げに関わらせていただき、多くのお客様の資金調達をサポートさせていただいた経験があります。<br>
@@ -220,7 +264,7 @@
             お客様のビジネスを持続する為に、資金調達のプロフェッショナルであるアウル経済におまかせいただければ幸いです。</p>
         </div>
       </div>
-      <div class="flex">
+      <div class="flex workPhoto">
         <div><img src="img/staff_08.jpg" alt="代表ワーク風景"></div>
         <div><img src="img/staff_09.jpg" alt="女性社員ワーク風景"></div>
       </div>
@@ -348,7 +392,7 @@
       </dl>
       <dl class="flex">
         <dt>所在地</dt>
-        <dd>東京都中央区日本橋2-2-3 RISHEビル UCF4階</dd>
+        <dd>東京都中央区日本橋2-2-3 <br class="spView">RISHEビル UCF4階</dd>
       </dl>
       <dl class="flex">
         <dt>設立年月</dt>
@@ -415,6 +459,10 @@
         // 640ピクセル幅以下になったら
         640: {
           slidesPerView: 2,
+          spaceBetween: 20
+        },
+        375: {
+          slidesPerView: 1,
           spaceBetween: 20
         }
       },

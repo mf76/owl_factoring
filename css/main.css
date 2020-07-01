@@ -57,9 +57,10 @@ html {
 body {
   font-family: "newRodin", "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "Yu Gothic", YuGothic, Verdana, Meiryo, sans-serif;
   font-size: 1.2rem;
-  line-height: 1.8rem;
+  line-height: 2rem;
   color: #707070;
   overflow-y: scroll;
+  letter-spacing: 0.01rem;
 }
 
 a {
@@ -109,7 +110,6 @@ textarea {
   -webkit-appearance: none;
   max-width: 100%;
   outline: 0;
-  border: 1px solid #b7f4f9;
   font-size: 1.7rem;
 }
 
@@ -128,12 +128,6 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .pcView {
@@ -237,6 +231,23 @@ button {
           justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .greenTitle .widthKeeper h2.greenBack {
+    font-size: 1.7rem;
+    padding: 30px 50px;
+    text-align: center;
+    line-height: 2.8rem;
+  }
+}
+
+@media (max-width: 568px) {
+  .greenTitle .widthKeeper h2.greenBack {
+    font-size: 1.3rem;
+    padding: 20px;
+    line-height: 2rem;
+  }
+}
+
 .greenTitle .widthKeeper .transparentGreen {
   position: absolute;
   background-color: #06663f;
@@ -251,12 +262,25 @@ button {
   z-index: 1;
 }
 
+@media (max-width: 568px) {
+  .greenTitle .widthKeeper .transparentGreen {
+    width: 95%;
+  }
+}
+
 .greenH2 {
   color: #06663f;
   font-weight: bold;
   text-align: center;
   font-size: 3rem;
   margin-bottom: 50px;
+}
+
+@media (max-width: 568px) {
+  .greenH2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
 }
 
 .paleGreenBg {
@@ -272,6 +296,12 @@ button {
 
 section {
   padding: 100px 0;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 50px 0;
+  }
 }
 
 section#top {
@@ -292,25 +322,68 @@ section#top .widthKeeper img.img01 {
   top: 5%;
 }
 
+@media (max-width: 768px) {
+  section#top .widthKeeper img.img01 {
+    width: 70%;
+  }
+}
+
+@media (max-width: 568px) {
+  section#top .widthKeeper img.img01 {
+    width: 100%;
+    top: 3%;
+  }
+}
+
 section#top .widthKeeper img.img02 {
   position: absolute;
   right: 0;
   width: 45%;
-  top: 47%;
+  top: 45%;
+}
+
+@media (max-width: 768px) {
+  section#top .widthKeeper img.img02 {
+    width: 60%;
+    top: 50%;
+  }
+}
+
+@media (max-width: 568px) {
+  section#top .widthKeeper img.img02 {
+    width: 100%;
+    top: 45%;
+  }
 }
 
 section#top .widthKeeper img.img03 {
   position: absolute;
   right: 0;
   width: 45%;
-  top: 63%;
+  top: 60%;
+}
+
+@media (max-width: 568px) {
+  section#top .widthKeeper img.img03 {
+    top: 55%;
+    width: 100%;
+  }
 }
 
 section#top .widthKeeper button {
   position: absolute;
   right: 0;
-  width: 300px;
+  width: 350px;
   bottom: 20px;
+}
+
+@media (max-width: 568px) {
+  section#top .widthKeeper button {
+    bottom: 13%;
+    width: 95%;
+    left: 0;
+    margin: auto;
+  }
 }
 
 section#contact {
@@ -324,22 +397,110 @@ section#contact .widthKeeper h2 {
   margin: 0 auto;
 }
 
+@media (max-width: 568px) {
+  section#contact .widthKeeper h2 {
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  section#contact .widthKeeper .contactBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 section#contact .widthKeeper .contactBox .contactBoxPanel {
   width: 50%;
   background: #fff;
-  margin: 30px;
-  height: 350px;
+  margin: 30px auto;
   -webkit-box-shadow: #868686 1px 1px 4px;
           box-shadow: #868686 1px 1px 4px;
   padding: 20px 40px;
+  padding-bottom: 45px;
+}
+
+@media (max-width: 768px) {
+  section#contact .widthKeeper .contactBox .contactBoxPanel {
+    width: 95%;
+  }
+}
+
+@media (max-width: 568px) {
+  section#contact .widthKeeper .contactBox .contactBoxPanel {
+    padding: 20px;
+  }
 }
 
 section#contact .widthKeeper .contactBox .contactBoxPanel h3 {
   color: #656565;
 }
 
+section#contact .widthKeeper .contactBox .contactBoxPanel form p {
+  margin: 10px auto;
+}
+
+section#contact .widthKeeper .contactBox .contactBoxPanel form label span {
+  text-align: center;
+}
+
+section#contact .widthKeeper .contactBox .contactBoxPanel form label input {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  padding: 5px 15px;
+  border: 2px solid #e4e4e4;
+}
+
+@media (max-width: 568px) {
+  section#contact .widthKeeper .contactBox .contactBoxPanel form label input {
+    padding: 5px;
+    width: 95%;
+  }
+}
+
+section#contact .widthKeeper .contactBox .contactBoxPanel form label ::-webkit-input-placeholder {
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+section#contact .widthKeeper .contactBox .contactBoxPanel form label :-ms-input-placeholder {
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+section#contact .widthKeeper .contactBox .contactBoxPanel form label ::-ms-input-placeholder {
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+section#contact .widthKeeper .contactBox .contactBoxPanel form label ::placeholder {
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
 section#contact .widthKeeper .contactBox .contactBoxPanel button {
   margin: 10px auto;
+}
+
+section#contact .widthKeeper .contactBox .contactBoxPanel button input[type="submit"] {
+  background: linear-gradient(-45deg, #f95503 0.04%, #f98703 99.58%);
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  width: 300px;
+  color: #fff;
+  font-weight: bold;
+  -webkit-box-shadow: 1px 1px 5px grey;
+          box-shadow: 1px 1px 5px grey;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+section#contact .widthKeeper .contactBox .contactBoxPanel button input[type="submit"]:hover {
+  opacity: 0.8;
 }
 
 section#contact .widthKeeper .contactBox .right {
@@ -357,9 +518,97 @@ section#contact .widthKeeper .contactBox .right {
 
 section#contact .widthKeeper .contactBox .right p {
   color: #06663f;
-  font-weight: bold;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+section#contact .widthKeeper .contactBox .right .btnArea button {
+  width: 90%;
+}
+
+section#contact .widthKeeper .contactBox .right .btnArea button a {
+  background: #3062a4;
+  background: linear-gradient(125deg, #3062a4 0%, #2b4465 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 15px;
+  padding: 15px 30px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 1px 1px 5px grey;
+          box-shadow: 1px 1px 5px grey;
+  height: 130px;
+}
+
+@media (max-width: 568px) {
+  section#contact .widthKeeper .contactBox .right .btnArea button a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+section#contact .widthKeeper .contactBox .right .btnArea button a img {
+  width: 100px;
+  display: block;
+}
+
+@media (max-width: 568px) {
+  section#contact .widthKeeper .contactBox .right .btnArea button a img {
+    width: 80px;
+  }
+}
+
+section#contact .widthKeeper .contactBox .right .btnArea button a p {
+  color: #fff;
+  font-size: 2rem;
+  width: 70%;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  section#contact .widthKeeper .contactBox .right .btnArea button a p {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 568px) {
+  section#contact .widthKeeper .contactBox .right .btnArea button a p {
+    width: 100%;
+    font-size: 2rem;
+  }
+}
+
+section#contact .widthKeeper .contactBox .right .btnArea button:last-of-type {
+  margin-top: 30px;
+}
+
+section#contact .widthKeeper .contactBox .right .btnArea button:last-of-type a {
+  background: #73e04a;
+  background: linear-gradient(125deg, #73e04a 0%, #52b52d 100%);
+}
+
+section#contact .widthKeeper .contactBox .right .btnArea button:last-of-type a img {
+  width: 74px;
+  padding-left: 10px;
+}
+
+@media (max-width: 568px) {
+  section#contact .widthKeeper .contactBox .right .btnArea button:last-of-type a img {
+    width: 67px;
+    padding-left: 0;
+  }
 }
 
 section#caution {
@@ -373,14 +622,44 @@ section#caution .widthKeeper .flex {
   padding: 100px 0;
 }
 
+@media (max-width: 568px) {
+  section#caution .widthKeeper .flex {
+    padding: 50px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 section#caution .widthKeeper .flex > div {
   width: 48%;
+}
+
+@media (max-width: 568px) {
+  section#caution .widthKeeper .flex > div {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 568px) {
+  section#caution .widthKeeper .flex > div.right {
+    width: 95%;
+    margin: 0 auto;
+  }
 }
 
 section#caution .widthKeeper .flex > div.right img:first-of-type {
   width: 90px;
   float: right;
   padding-top: 100px;
+}
+
+@media (max-width: 568px) {
+  section#caution .widthKeeper .flex > div.right img:first-of-type {
+    padding-top: 20px;
+  }
 }
 
 section#caution .widthKeeper .flex > div.right img:last-of-type {
@@ -411,6 +690,12 @@ section#why #cantChoose img {
   margin: 0 auto;
 }
 
+@media (max-width: 568px) {
+  section#why #cantChoose img {
+    width: 100%;
+  }
+}
+
 section#why #cantChoose .posA {
   position: absolute;
   width: 180px;
@@ -433,13 +718,45 @@ section#why #whyFlex {
   padding: 70px 0;
 }
 
+@media (max-width: 568px) {
+  section#why #whyFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 section#why #whyFlex img {
   width: 48%;
   margin-bottom: 30px;
 }
 
+@media (max-width: 568px) {
+  section#why #whyFlex img {
+    width: 95%;
+    margin: 0 auto 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  section#why .paleGreenBg .widthKeeper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 section#why .paleGreenBg .widthKeeper div {
   width: 50%;
+}
+
+@media (max-width: 768px) {
+  section#why .paleGreenBg .widthKeeper div {
+    width: 95%;
+    margin: 0 auto;
+  }
 }
 
 section#why .paleGreenBg .widthKeeper div.left {
@@ -455,6 +772,12 @@ section#why .paleGreenBg .widthKeeper div.left {
       justify-content: space-around;
 }
 
+@media (max-width: 568px) {
+  section#why .paleGreenBg .widthKeeper div.left {
+    padding: 50px 0;
+  }
+}
+
 section#why .paleGreenBg .widthKeeper div.left p {
   color: #707070;
 }
@@ -466,11 +789,29 @@ section#why .paleGreenBg .widthKeeper div.left ul li {
   margin: 12px 0;
 }
 
+@media (max-width: 568px) {
+  section#why .paleGreenBg .widthKeeper div.left ul li {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section#why .paleGreenBg .widthKeeper div.right {
+    margin-bottom: 50px;
+  }
+}
+
 section#flow .widthKeeper p {
   text-align: center;
   color: #707070;
   font-size: 1.5rem;
   margin-bottom: 50px;
+}
+
+@media (max-width: 568px) {
+  section#flow .widthKeeper p {
+    font-size: 1.3rem;
+  }
 }
 
 section#flow .widthKeeper .flex {
@@ -480,9 +821,25 @@ section#flow .widthKeeper .flex {
   margin-bottom: 50px;
 }
 
+@media (max-width: 568px) {
+  section#flow .widthKeeper .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 section#flow .widthKeeper .flex div {
   width: 24%;
   position: relative;
+}
+
+@media (max-width: 568px) {
+  section#flow .widthKeeper .flex div {
+    width: 90%;
+    margin: 10px auto;
+  }
 }
 
 section#flow .widthKeeper .flex div:after {
@@ -500,6 +857,17 @@ section#flow .widthKeeper .flex div:after {
   z-index: 5;
 }
 
+@media (max-width: 568px) {
+  section#flow .widthKeeper .flex div:after {
+    left: 0;
+    right: 0;
+    top: unset;
+    bottom: -35px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
 section#flow .widthKeeper .flex div:last-of-type:after {
   display: none;
 }
@@ -509,7 +877,13 @@ section#voice .voicePanel {
   padding: 30px;
   border-radius: 10px;
   height: auto;
-  min-height: 550px;
+  min-height: 620px;
+}
+
+@media (max-width: 568px) {
+  section#voice .voicePanel {
+    min-height: 400px;
+  }
 }
 
 section#voice .voicePanel > p {
@@ -556,7 +930,7 @@ section#voice .voicePanel .flex .right > p {
 section#voice .voicePanel .flex .right > p span {
   display: inline-block;
   font-weight: bold;
-  color: orange;
+  color: #e67b3f;
   font-size: 2.3rem;
 }
 
@@ -568,6 +942,18 @@ section#staff .widthKeeper .staffBox {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 50px;
+}
+
+@media (max-width: 568px) {
+  section#staff .widthKeeper .staffBox {
+    width: 95%;
+    margin: 0 auto 75px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 30px 25px;
+  }
 }
 
 section#staff .widthKeeper .staffBox h3 {
@@ -584,13 +970,38 @@ section#staff .widthKeeper .staffBox .staffPic {
   margin-top: 10px;
 }
 
+@media (max-width: 568px) {
+  section#staff .widthKeeper .staffBox .staffPic {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
 section#staff .widthKeeper .staffBox .staffCap {
   width: 75%;
+}
+
+@media (max-width: 568px) {
+  section#staff .widthKeeper .staffBox .staffCap {
+    width: 100%;
+  }
 }
 
 section#staff .widthKeeper .staffBox .staffCap h4 {
   margin-bottom: 20px;
   font-size: 1.4rem;
+}
+
+@media (max-width: 568px) {
+  section#staff .widthKeeper .workPhoto {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section#staff .widthKeeper .workPhoto div {
+    margin-bottom: 15px;
+  }
 }
 
 section#ceo .widthKeeper {
@@ -599,10 +1010,33 @@ section#ceo .widthKeeper {
           justify-content: space-between;
 }
 
+@media (max-width: 568px) {
+  section#ceo .widthKeeper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 section#ceo .widthKeeper .left {
   width: 60%;
   padding-right: 70px;
   margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+  section#ceo .widthKeeper .left {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 568px) {
+  section#ceo .widthKeeper .left {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
 }
 
 section#ceo .widthKeeper .left h3 {
@@ -611,6 +1045,12 @@ section#ceo .widthKeeper .left h3 {
 
 section#ceo .widthKeeper .right {
   width: 38%;
+}
+
+@media (max-width: 568px) {
+  section#ceo .widthKeeper .right {
+    width: 100%;
+  }
 }
 
 section#ceo .widthKeeper .right img {
@@ -698,9 +1138,21 @@ section#company .greenTitle {
   background-position: 0px -140px;
 }
 
+@media (max-width: 568px) {
+  section#company .greenTitle {
+    background-position: center;
+  }
+}
+
 section#company #companyInfo {
   margin-top: 50px;
   padding: 0 50px;
+}
+
+@media (max-width: 568px) {
+  section#company #companyInfo {
+    padding: 0;
+  }
 }
 
 section#company #companyInfo dl {
@@ -714,6 +1166,21 @@ section#company #companyInfo dl {
   margin-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+  section#company #companyInfo dl {
+    width: 95%;
+  }
+}
+
+@media (max-width: 568px) {
+  section#company #companyInfo dl {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 section#company #companyInfo dl dt {
   font-weight: bold;
   width: 28%;
@@ -721,8 +1188,22 @@ section#company #companyInfo dl dt {
   color: #6b6b6b;
 }
 
+@media (max-width: 568px) {
+  section#company #companyInfo dl dt {
+    text-align: center;
+    width: 100%;
+  }
+}
+
 section#company #companyInfo dl dd {
   width: 70%;
+}
+
+@media (max-width: 568px) {
+  section#company #companyInfo dl dd {
+    text-align: center;
+    width: 100%;
+  }
 }
 
 footer {
@@ -751,6 +1232,18 @@ footer .widthKeeper {
   z-index: 5;
 }
 
+@media (max-width: 568px) {
+  footer .widthKeeper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 footer .widthKeeper div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -769,6 +1262,25 @@ footer .widthKeeper .left {
   width: 30%;
 }
 
+@media (max-width: 768px) {
+  footer .widthKeeper .left {
+    width: 50%;
+  }
+}
+
+@media (max-width: 568px) {
+  footer .widthKeeper .left {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 50px;
+  }
+}
+
 footer .widthKeeper .left img {
   width: 100px;
   margin-bottom: 20px;
@@ -780,12 +1292,30 @@ footer .widthKeeper .left p {
   font-size: 1.5rem;
 }
 
+@media (max-width: 568px) {
+  footer .widthKeeper .left p {
+    text-align: center;
+  }
+}
+
 footer .widthKeeper .right {
   width: 30%;
+}
+
+@media (max-width: 568px) {
+  footer .widthKeeper .right {
+    width: 100%;
+  }
 }
 
 footer .widthKeeper .right a {
   color: #fff;
   text-align: right;
+}
+
+@media (max-width: 568px) {
+  footer .widthKeeper .right a {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */
