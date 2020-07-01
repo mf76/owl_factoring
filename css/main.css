@@ -328,6 +328,26 @@ section#contact .widthKeeper .contactBox .contactBoxPanel button {
   margin: 10px auto;
 }
 
+section#contact .widthKeeper .contactBox .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section#contact .widthKeeper .contactBox .right p {
+  color: #06663f;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
 section#caution {
   padding: 0;
 }
@@ -468,6 +488,62 @@ section#flow .widthKeeper .flex div:after {
 
 section#flow .widthKeeper .flex div:last-of-type:after {
   display: none;
+}
+
+section#voice .voicePanel {
+  border: 1px solid #2ab076;
+  padding: 30px;
+  border-radius: 10px;
+  height: auto;
+  min-height: 550px;
+}
+
+section#voice .voicePanel > p {
+  margin-top: 15px;
+}
+
+section#voice .voicePanel .flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section#voice .voicePanel .flex .voiceIcon {
+  width: 20%;
+}
+
+section#voice .voicePanel .flex .right {
+  width: 78%;
+}
+
+section#voice .voicePanel .flex .right p.green {
+  background-color: #06663f;
+  padding: 3px 5px;
+  color: #fff;
+  font-weight: bold;
+  display: block;
+  float: right;
+  margin-bottom: 5px;
+}
+
+section#voice .voicePanel .flex .right h3 {
+  clear: both;
+  text-align: right;
+  font-weight: bold;
+  color: #06663f;
+  margin: 5px 0;
+}
+
+section#voice .voicePanel .flex .right > p {
+  text-align: right;
+  font-weight: bold;
+}
+
+section#voice .voicePanel .flex .right > p span {
+  display: inline-block;
+  font-weight: bold;
+  color: orange;
+  font-size: 2.3rem;
 }
 
 section#staff .widthKeeper .staffBox {

@@ -7,6 +7,7 @@
   <title>アウル経済の請求書買い取り</title>
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 </head>
 
 <body>
@@ -28,6 +29,7 @@
         </div>
         <div class="contactBoxPanel right">
           <h3>お問い合わせ</h3>
+          <p>営業時間内はお電話または<br>LINEお問い合わせが便利です</p>
           <div class="flex">
             <button><img src="img/contact__img_dial.svg" alt=""></button>
             <button><a href="https://page.line.me/065gwzlz"><img src="img/contact__img_line.svg" alt=""></a></button>
@@ -110,6 +112,89 @@
   <section id="voice">
     <div class="widthKeeper">
       <h2 class="greenH2">ご利用いただいたお客様の声</h2>
+      <!-- Slider main container -->
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="voicePanel">
+              <div class="flex">
+                <div class="voiceIcon"><img src="img/voice__img_icon.svg" alt=""></div>
+                <div class="right">
+                  <p class="green">建設業</p>
+                  <h3>簡単な手続きでした</h3>
+                  <p>1社分<span>1500</span>万円</p>
+                </div>
+              </div>
+              <p>
+                私は建設業を営んでいるのですが、ゼネコン様は入金のサイクルが長く、一方で職人さんへの支払いは毎月あるので資金繰りが大変でした。しかしアウル経済に相談したところ、弊社の売掛先を評価していただきお互い納得の条件で取引することができました。
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="voicePanel">
+              <div class="flex">
+                <div class="voiceIcon"><img src="img/voice__img_icon.svg" alt=""></div>
+                <div class="right">
+                  <p class="green">システム開発</p>
+                  <h3>手数料で選びました</h3>
+                  <p>1社分<span>500</span>万円</p>
+                </div>
+              </div>
+              <p>
+                ファクタリングのサービスは今まで何回か利用した経験があるのですが、どの業者も弊社の売掛債権を確認するなり、ホームページと謳い文句が違う手数料を提示されるか、断られることが多かったです。しかしアウル経済さんはそのようなことはなく、弊社の状況を真剣に判断いただき、お互い納得の上で取引することができました。
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="voicePanel">
+              <div class="flex">
+                <div class="voiceIcon"><img src="img/voice__img_icon.svg" alt=""></div>
+                <div class="right">
+                  <p class="green">メーカー</p>
+                  <h3>とても早い入金です</h3>
+                  <p>1社分<span>1000</span>万円</p>
+                </div>
+              </div>
+              <p>
+                資金調達の際、弊社は銀行に融資をお願いすることが多かったのですが、毎回用意する書類が多く、また審査に時間がかかることがネックでした。また業務が立て込んでいることが多い中で、銀行の窓口に赴くことも負担でした。そのような中、アウル経済のサービスを利用したところ、必要書類も最小限ですぐに審査していただけ、相談から入金まで約１日程度と、とても素早い対応をしていただき、資金調達効率の改善を実感しました。
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="voicePanel">
+              <div class="flex">
+                <div class="voiceIcon"><img src="img/voice__img_icon.svg" alt=""></div>
+                <div class="right">
+                  <p class="green">介護</p>
+                  <h3>介護業界に造詣が深い</h3>
+                  <p>1社分<span>800</span>万円</p>
+                </div>
+              </div>
+              <p>
+                売掛先は基本的に国や自治体の公的機関になりますが、当月の診療報酬分が翌々月21日前後と比較的長いことがネックでした。資金繰りに奔走しなくて済むので、とても助かっています。
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="voicePanel">
+              <div class="flex">
+                <div class="voiceIcon"><img src="img/voice__img_icon.svg" alt=""></div>
+                <div class="right">
+                  <p class="green">メーカー</p>
+                  <h3>無担保が決め手</h3>
+                  <p>1社分<span>500</span>万円</p>
+                </div>
+              </div>
+              <p>
+                通常資金調達をする際、連帯保証人を付けたり担保を差し出したりすることが多いと思います。アウル経済のファクタリングサービスでは、純粋に売掛債権の担保評価となりますので、手続きがとても簡単でした。
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
   </section>
   <section id="staff" class="paleGreenBg">
@@ -178,67 +263,67 @@
         <li>
           <details>
             <summary>Q.買取最低金額はありますか？</summary>
-            <p>原則100万円以上からとなっています。</>
+            <p>原則100万円以上からとなっています。</p>
           </details>
         </li>
         <li>
           <details>
             <summary>Q.買取上限金額はありますか？</summary>
-            <p>原則100万円以上からとなっています。</>
+            <p>売掛先の状況に応じて適宜判断させていただいておりますが、最高で１億円までの買取実行例となっています。</p>
           </details>
         </li>
         <li>
           <details>
             <summary>Q.公庫や銀行から借り入れ中ですが、利用できますか？</summary>
-            <p>原則100万円以上からとなっています。</>
+            <p>利用可能です。お客様のほとんどが金融機関から借り入れを行っておられます。</p>
           </details>
         </li>
         <li>
           <details>
             <summary>Q.手数料はどのぐらいですか？</summary>
-            <p>原則100万円以上からとなっています。</>
+            <p>お客様の業種・設立年・売掛先によって違いますが、概ね手数料率1~5％程度で買取させていただいております。</p>
           </details>
         </li>
         <li>
           <details>
             <summary>Q.どのような書類が必要ですか？</summary>
-            <p>原則100万円以上からとなっています。</>
+            <p>お客様の直近の決算書、通帳のコピー、入金予定の請求書が必要となります。</p>
           </details>
         </li>
         <li>
           <details>
             <summary>Q.買取不可能な業種はありますか？</summary>
-            <p>原則100万円以上からとなっています。</>
+            <p>いいえ、ございません。</p>
           </details>
         </li>
         <li>
           <details>
             <summary>Q.2社間取引ですか？3社間取引ですか？</summary>
-            <p>原則100万円以上からとなっています。</>
+            <p>原則2社間取引となっています。</p>
           </details>
         </li>
         <li>
           <details>
             <summary>Q.売掛先が倒産した場合どうなりますか？</summary>
-            <p>原則100万円以上からとなっています。</>
+            <p>買取実行後の売掛先倒産リスクは弊社が負うことになりますので、お客様にご対応していただくことはございません。</p>
           </details>
         </li>
         <li>
           <details>
             <summary>Q.連帯保証人は必要ですか？</summary>
-            <p>原則100万円以上からとなっています。</>
+            <p>いいえ。必要ありません。</p>
           </details>
         </li>
         <li>
           <details>
             <summary>Q.取引先に知られますか？</summary>
-            <p>原則100万円以上からとなっています。</>
+            <p>いいえ。知られることはありません。あくまでお客様と弊社との間の契約となり、契約事項の秘密は守られます。</p>
           </details>
         </li>
         <li>
           <details>
             <summary>Q.赤字ですが利用可能ですか？</summary>
-            <p>原則100万円以上からとなっています。</>
+            <p>赤字であっても売掛先の評価で買取の可否や条件を検討いたしますので、お気軽にご相談ください。</p>
           </details>
         </li>
 
@@ -303,6 +388,39 @@
       </div>
     </div>
   </footer>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script>
+    var mySwiper = new Swiper('.swiper-container', {
+      loop: true, // 最後のスライドまで到達した場合、最初に戻らずに続けてスライド可能にするか。
+      speed: 600, // スライドが切り替わるトランジション時間(ミリ秒)。
+      slidesPerView: 3, // 何枚のスライドを表示するか
+      spaceBetween: 10, // スライド間の余白サイズ(ピクセル)
+      direction: 'horizontal', // スライド方向。 'horizontal'(水平) か 'vertical'(垂直)。effectオプションが 'slide' 以外は無効。
+      effect: 'slide', // "slide", "fade"(フェード), "cube"(キューブ回転), "coverflow"(カバーフロー) または "flip"(平面回転)
+
+      // スライダーの自動再生
+      // autoplay: true 　のみなら既定値での自動再生
+      autoplay: {
+        delay: 3000, // スライドが切り替わるまでの表示時間(ミリ秒)
+        stopOnLast: false, // 最後のスライドまで表示されたら自動再生を中止するか
+        disableOnInteraction: true // ユーザーのスワイプ操作を検出したら自動再生を中止するか
+      },
+
+      // レスポンシブ化条件
+      breakpoints: {
+        // 980ピクセル幅以下になったら
+        980: {
+          slidesPerView: 3,
+          spaceBetween: 30
+        },
+        // 640ピクセル幅以下になったら
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        }
+      },
+    })
+  </script>
 </body>
 
 </html>
