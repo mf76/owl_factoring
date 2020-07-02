@@ -290,6 +290,12 @@ section {
     padding: 50px 0;
   }
 }
+a[href^="tel:"] {
+  pointer-events: none;
+  @include tab {
+    pointer-events: auto;
+  }
+}
 //　アウル経済の個別
 
 section#top {
@@ -369,7 +375,7 @@ section#contact {
         flex-direction: column;
       }
       .contactBoxPanel {
-        width: 50%;
+        width: 48%;
         background: #fff;
         margin: 30px auto;
         box-shadow: #868686 1px 1px 4px;
@@ -383,6 +389,10 @@ section#contact {
         }
         h3 {
           color: #656565;
+          margin-bottom: 10px;
+          @include sp {
+            text-align: center;
+          }
         }
         form {
           p {
@@ -554,6 +564,10 @@ section#caution {
           p {
             a {
               text-align: right;
+              font-size: 0.9rem;
+              @include sp {
+                font-size: 0.5rem;
+              }
             }
           }
         }
@@ -757,6 +771,8 @@ section#staff {
       position: relative;
       justify-content: space-between;
       margin-bottom: 50px;
+      height: auto;
+      min-height: 400px;
       @include sp {
         width: 95%;
         margin: 0 auto 75px;
@@ -846,13 +862,13 @@ section#faq {
     ul {
       margin: 50px 0;
       li {
-        background: #f2f2f2;
-        padding: 25px 50px;
-        margin-bottom: 20px;
         details {
           transition: 0.5s;
+          margin-bottom: 20px;
           cursor: pointer;
           summary {
+            background: #f2f2f2;
+            padding: 25px 50px;
             font-size: 1.4rem;
             font-weight: bold;
             &:focus {
@@ -862,20 +878,23 @@ section#faq {
           p {
             background: #fafafa;
             padding: 20px;
-            margin-top: 20px;
           }
         }
-        details[open] p {
-          animation: fadeIn 0.5s ease;
+        details[open] > div {
+          animation-name: slideDown;
+          animation-duration: 0.3s;
+          animation-fill-mode: forwards;
         }
-        @keyframes fadeIn {
-          0% {
-            opacity: 0; /* 透明 */
-            transform: translateY(-10px); /* 上から表示 */
+        @keyframes slideDown {
+          from {
+            opacity: 0;
+            height: 0;
+            padding: 0;
           }
-          100% {
+          to {
             opacity: 1;
-            transform: none;
+            height: var(--contentHeight);
+            padding: 20px;
           }
         }
       }
@@ -959,7 +978,10 @@ footer {
       padding-bottom: 20px;
     }
     .left {
-      width: 30%;
+      width: 40%;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-end;
       @include tab {
         width: 50%;
       }
@@ -968,10 +990,13 @@ footer {
         display: flex;
         align-items: center;
         margin-top: 50px;
+        flex-direction: column;
       }
-      img {
+      div {
         width: 100px;
-        margin-bottom: 20px;
+        margin-right: 20px;
+        margin-bottom: 0;
+        padding-bottom: 0;
       }
       p {
         color: #fff;

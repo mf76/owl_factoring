@@ -304,6 +304,16 @@ section {
   }
 }
 
+a[href^="tel:"] {
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  a[href^="tel:"] {
+    pointer-events: auto;
+  }
+}
+
 section#top {
   background-image: url(../img/bg_top.jpg);
   background-size: cover;
@@ -413,7 +423,7 @@ section#contact .widthKeeper h2 {
 }
 
 section#contact .widthKeeper .contactBox .contactBoxPanel {
-  width: 50%;
+  width: 48%;
   background: #fff;
   margin: 30px auto;
   -webkit-box-shadow: #868686 1px 1px 4px;
@@ -436,6 +446,13 @@ section#contact .widthKeeper .contactBox .contactBoxPanel {
 
 section#contact .widthKeeper .contactBox .contactBoxPanel h3 {
   color: #656565;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 568px) {
+  section#contact .widthKeeper .contactBox .contactBoxPanel h3 {
+    text-align: center;
+  }
 }
 
 section#contact .widthKeeper .contactBox .contactBoxPanel form p {
@@ -671,6 +688,13 @@ section#caution .widthKeeper .flex > div.right img:last-of-type {
 
 section#caution .widthKeeper .flex > div.right p a {
   text-align: right;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 568px) {
+  section#caution .widthKeeper .flex > div.right p a {
+    font-size: 0.5rem;
+  }
 }
 
 section#why {
@@ -942,6 +966,8 @@ section#staff .widthKeeper .staffBox {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 50px;
+  height: auto;
+  min-height: 400px;
 }
 
 @media (max-width: 568px) {
@@ -1071,19 +1097,16 @@ section#faq #faqBox ul {
   margin: 50px 0;
 }
 
-section#faq #faqBox ul li {
-  background: #f2f2f2;
-  padding: 25px 50px;
-  margin-bottom: 20px;
-}
-
 section#faq #faqBox ul li details {
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  margin-bottom: 20px;
   cursor: pointer;
 }
 
 section#faq #faqBox ul li details summary {
+  background: #f2f2f2;
+  padding: 25px 50px;
   font-size: 1.4rem;
   font-weight: bold;
 }
@@ -1095,41 +1118,40 @@ section#faq #faqBox ul li details summary:focus {
 section#faq #faqBox ul li details p {
   background: #fafafa;
   padding: 20px;
-  margin-top: 20px;
 }
 
-section#faq #faqBox ul li details[open] p {
-  -webkit-animation: fadeIn 0.5s ease;
-          animation: fadeIn 0.5s ease;
+section#faq #faqBox ul li details[open] > div {
+  -webkit-animation-name: slideDown;
+          animation-name: slideDown;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes fadeIn {
-  0% {
+@-webkit-keyframes slideDown {
+  from {
     opacity: 0;
-    /* 透明 */
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-    /* 上から表示 */
+    height: 0;
+    padding: 0;
   }
-  100% {
+  to {
     opacity: 1;
-    -webkit-transform: none;
-            transform: none;
+    height: var(--contentHeight);
+    padding: 20px;
   }
 }
 
-@keyframes fadeIn {
-  0% {
+@keyframes slideDown {
+  from {
     opacity: 0;
-    /* 透明 */
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-    /* 上から表示 */
+    height: 0;
+    padding: 0;
   }
-  100% {
+  to {
     opacity: 1;
-    -webkit-transform: none;
-            transform: none;
+    height: var(--contentHeight);
+    padding: 20px;
   }
 }
 
@@ -1259,7 +1281,17 @@ footer .widthKeeper div {
 }
 
 footer .widthKeeper .left {
-  width: 30%;
+  width: 40%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 @media (max-width: 768px) {
@@ -1278,12 +1310,18 @@ footer .widthKeeper .left {
         -ms-flex-align: center;
             align-items: center;
     margin-top: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
-footer .widthKeeper .left img {
+footer .widthKeeper .left div {
   width: 100px;
-  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 footer .widthKeeper .left p {

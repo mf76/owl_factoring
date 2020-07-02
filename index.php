@@ -65,7 +65,7 @@
           <p>営業時間内はお電話または<br>LINEお問い合わせが便利です</p>
           <div class="btnArea">
             <button>
-              <a href="">
+              <a href="tel:0120-800-112">
                 <img src="img/contact__img_dial.svg" alt="">
                 <p>0120-800-112</p>
               </a>
@@ -271,6 +271,9 @@
     </div>
   </section>
   <section id="ceo">
+    <div class="widthKeeper">
+      <h2 class="greenH2">代表メッセージ</h2>
+    </div>
     <div class="widthKeeper flex">
       <div class="left">
         <h3><img src="img/ceo__img_title.svg" alt=""></h3>
@@ -301,75 +304,96 @@
         <h2 class="greenBack">よくあるご質問</h2>
       </div>
     </div>
-    <div id="faqBox" class="widthKeeper">
+    <div id="faqBox" class="widthKeeper container collapse">
       <ul>
         <li>
           <details>
             <summary>Q.買取最低金額はありますか？</summary>
-            <p>原則100万円以上からとなっています。</p>
+            <div>
+              <p>原則100万円以上からとなっています。</p>
+            </div>
           </details>
         </li>
         <li>
           <details>
             <summary>Q.買取上限金額はありますか？</summary>
-            <p>売掛先の状況に応じて適宜判断させていただいておりますが、最高で１億円までの買取実行例となっています。</p>
+            <div>
+              <p>売掛先の状況に応じて適宜判断させていただいておりますが、最高で１億円までの買取実行例となっています。</p>
+            </div>
           </details>
         </li>
         <li>
           <details>
             <summary>Q.公庫や銀行から借り入れ中ですが、利用できますか？</summary>
-            <p>利用可能です。お客様のほとんどが金融機関から借り入れを行っておられます。</p>
+            <div>
+              <p>利用可能です。お客様のほとんどが金融機関から借り入れを行っておられます。</p>
+            </div>
           </details>
         </li>
         <li>
           <details>
             <summary>Q.手数料はどのぐらいですか？</summary>
-            <p>お客様の業種・設立年・売掛先によって違いますが、概ね手数料率1~5％程度で買取させていただいております。</p>
+            <div>
+              <p>お客様の業種・設立年・売掛先によって違いますが、概ね手数料率1〜5％程度で買取させていただいております。</p>
+            </div>
           </details>
         </li>
         <li>
           <details>
             <summary>Q.どのような書類が必要ですか？</summary>
-            <p>お客様の直近の決算書、通帳のコピー、入金予定の請求書が必要となります。</p>
+            <div>
+              <p>お客様の直近の決算書、通帳のコピー、入金予定の請求書が必要となります。</p>
+            </div>
           </details>
         </li>
         <li>
           <details>
             <summary>Q.買取不可能な業種はありますか？</summary>
-            <p>いいえ、ございません。</p>
+            <div>
+              <p>いいえ、ございません。</p>
+            </div>
           </details>
         </li>
         <li>
           <details>
             <summary>Q.2社間取引ですか？3社間取引ですか？</summary>
-            <p>原則2社間取引となっています。</p>
+            <div>
+              <p>原則2社間取引となっています。</p>
+            </div>
           </details>
         </li>
         <li>
           <details>
             <summary>Q.売掛先が倒産した場合どうなりますか？</summary>
-            <p>買取実行後の売掛先倒産リスクは弊社が負うことになりますので、お客様にご対応していただくことはございません。</p>
+            <div>
+              <p>買取実行後の売掛先倒産リスクは弊社が負うことになりますので、お客様にご対応していただくことはございません。</p>
+            </div>
           </details>
         </li>
         <li>
           <details>
             <summary>Q.連帯保証人は必要ですか？</summary>
-            <p>いいえ。必要ありません。</p>
+            <div>
+              <p>いいえ。必要ありません。</p>
+            </div>
           </details>
         </li>
         <li>
           <details>
             <summary>Q.取引先に知られますか？</summary>
-            <p>いいえ。知られることはありません。あくまでお客様と弊社との間の契約となり、契約事項の秘密は守られます。</p>
+            <div>
+              <p>いいえ。知られることはありません。あくまでお客様と弊社との間の契約となり、契約事項の秘密は守られます。</p>
+            </div>
           </details>
         </li>
         <li>
           <details>
             <summary>Q.赤字ですが利用可能ですか？</summary>
-            <p>赤字であっても売掛先の評価で買取の可否や条件を検討いたしますので、お気軽にご相談ください。</p>
+            <div>
+              <p>赤字であっても売掛先の評価で買取の可否や条件を検討いたしますので、お気軽にご相談ください。</p>
+            </div>
           </details>
         </li>
-
       </ul>
     </div>
   </section>
@@ -423,7 +447,7 @@
   <footer>
     <div class="widthKeeper flex">
       <div class="left">
-        <img src="img/logo_white.svg" alt="">
+        <div><img src="img/logo_white.svg" alt=""></div>
         <p>アウル経済の請求書買取り</p>
       </div>
       <div class="right">
