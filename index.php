@@ -66,13 +66,13 @@
           <div class="btnArea">
             <button>
               <a href="tel:0120-800-112">
-                <img src="img/contact__img_dial.svg" alt="">
+                <div><img src="img/contact__img_dial.svg" alt=""></div>
                 <p>0120-800-112</p>
               </a>
             </button>
             <button>
               <a href="https://page.line.me/065gwzlz" target="_blank">
-                <img src="img/contact__img_line.svg" alt="">
+                <div><img src="img/contact__img_line.svg" alt=""></div>
                 <p>お問い合わせ</p>
               </a>
             </button>
@@ -313,7 +313,7 @@
       <ul>
         <li>
           <details>
-            <summary>Q.買取最低金額はありますか？</summary>
+            <summary>Q.買取最低金額は<br class="spView">ありますか？</summary>
             <div>
               <p>原則100万円以上からとなっています。</p>
             </div>
@@ -321,7 +321,7 @@
         </li>
         <li>
           <details>
-            <summary>Q.買取上限金額はありますか？</summary>
+            <summary>Q.買取上限金額は<br class="spView">ありますか？</summary>
             <div>
               <p>売掛先の状況に応じて適宜判断させていただいておりますが、最高で１億円までの買取実行例となっています。</p>
             </div>
@@ -337,7 +337,7 @@
         </li>
         <li>
           <details>
-            <summary>Q.手数料はどのぐらいですか？</summary>
+            <summary>Q.手数料は<br class="spView">どのぐらいですか？</summary>
             <div>
               <p>お客様の業種・設立年・売掛先によって違いますが、概ね手数料率1〜5％程度で買取させていただいております。</p>
             </div>
@@ -345,7 +345,7 @@
         </li>
         <li>
           <details>
-            <summary>Q.どのような書類が必要ですか？</summary>
+            <summary>Q.どのような書類が<br class="spView">必要ですか？</summary>
             <div>
               <p>お客様の直近の決算書、通帳のコピー、入金予定の請求書が必要となります。</p>
             </div>
@@ -361,7 +361,7 @@
         </li>
         <li>
           <details>
-            <summary>Q.2社間取引ですか？3社間取引ですか？</summary>
+            <summary>Q.2社間取引ですか？<br class="spView">3社間取引ですか？</summary>
             <div>
               <p>原則2社間取引となっています。</p>
             </div>
@@ -369,7 +369,7 @@
         </li>
         <li>
           <details>
-            <summary>Q.売掛先が倒産した場合どうなりますか？</summary>
+            <summary>Q.売掛先が倒産した<br class="spView">場合どうなりますか？</summary>
             <div>
               <p>買取実行後の売掛先倒産リスクは弊社が負うことになりますので、お客様にご対応していただくことはございません。</p>
             </div>
@@ -377,7 +377,7 @@
         </li>
         <li>
           <details>
-            <summary>Q.連帯保証人は必要ですか？</summary>
+            <summary>Q.連帯保証人は<br class="spView">必要ですか？</summary>
             <div>
               <p>いいえ。必要ありません。</p>
             </div>
@@ -385,7 +385,7 @@
         </li>
         <li>
           <details>
-            <summary>Q.取引先に知られますか？</summary>
+            <summary>Q.取引先に<br class="spView">知られますか？</summary>
             <div>
               <p>いいえ。知られることはありません。あくまでお客様と弊社との間の契約となり、契約事項の秘密は守られます。</p>
             </div>
@@ -393,7 +393,7 @@
         </li>
         <li>
           <details>
-            <summary>Q.赤字ですが利用可能ですか？</summary>
+            <summary>Q.赤字ですが<br class="spView">利用可能ですか？</summary>
             <div>
               <p>赤字であっても売掛先の評価で買取の可否や条件を検討いたしますので、お気軽にご相談ください。</p>
             </div>

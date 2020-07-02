@@ -62,6 +62,12 @@ body {
   letter-spacing: 0.01rem;
 }
 
+@media (max-width: 568px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -580,15 +586,15 @@ section#contact .widthKeeper .contactBox .right .btnArea button a {
   }
 }
 
-section#contact .widthKeeper .contactBox .right .btnArea button a img {
+section#contact .widthKeeper .contactBox .right .btnArea button a div {
   width: 100px;
   display: block;
 }
 
 @media (max-width: 568px) {
-  section#contact .widthKeeper .contactBox .right .btnArea button a img {
+  section#contact .widthKeeper .contactBox .right .btnArea button a div {
     width: 80px;
-    margin-left: 10px;
+    padding-left: 10px;
   }
 }
 
@@ -621,13 +627,13 @@ section#contact .widthKeeper .contactBox .right .btnArea button:last-of-type a {
   background: linear-gradient(125deg, #73e04a 0%, #52b52d 100%);
 }
 
-section#contact .widthKeeper .contactBox .right .btnArea button:last-of-type a img {
+section#contact .widthKeeper .contactBox .right .btnArea button:last-of-type a div {
   width: 74px;
   padding-left: 10px;
 }
 
 @media (max-width: 568px) {
-  section#contact .widthKeeper .contactBox .right .btnArea button:last-of-type a img {
+  section#contact .widthKeeper .contactBox .right .btnArea button:last-of-type a div {
     width: 67px;
     padding-left: 0;
     margin-left: 0;
@@ -1130,6 +1136,12 @@ section#faq #faqBox ul li details summary {
   padding: 25px 50px;
   font-size: 1.4rem;
   font-weight: bold;
+}
+
+@media (max-width: 568px) {
+  section#faq #faqBox ul li details summary {
+    padding: 25px;
+  }
 }
 
 section#faq #faqBox ul li details summary:focus {
