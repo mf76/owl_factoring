@@ -42,9 +42,9 @@
 
       <dl id="policyInfo">
         <dt>お問い合わせ</dt>
-        <dd>株式会社Frontierfort</dd>
-        <dd>03-5904-9155</dd>
-        <dd>info@factoringjapan.jp</dd>
+        <dd>株式会社アウル経済</dd>
+        <dd>03-6902-1815</dd>
+        <dd>info@owl-economy.jp</dd>
       </dl>
     </section>
   </main>
