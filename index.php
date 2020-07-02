@@ -15,7 +15,7 @@
       <img src="img/top__img01.svg" class="img01" alt="本当に安心できる資金調達なら">
       <img src="img/top__img02.svg" class="img02" alt="アウル経済の請求書買取り">
       <img src="img/top__img03.svg" class="img03" alt="業界最安水準手数料">
-      <button class="button jelly"><img src="img/btn__top.svg" alt="無料相談はこちら"></button>
+      <a href="#contact"><button class="button jelly"><img src="img/btn__top.svg" alt="無料相談はこちら"></button></a>
     </div>
   </section>
   <section id="contact">
@@ -137,7 +137,9 @@
           <img src="img/why__img_sign.jpg" alt="サインする男性">
         </div>
       </div>
+      <a href="#contact"><button class="button jelly inside"><img src="img/btn__top.svg" alt="無料相談はこちら"></button></a>
     </div>
+
   </section>
   <section id="flow">
     <div class="widthKeeper">
@@ -237,6 +239,8 @@
           </div>
 
         </div>
+        <!-- ページネーション -->
+        <div class="swiper-pagination"></div>
       </div>
     </div>
   </section>
@@ -264,6 +268,7 @@
             お客様のビジネスを持続する為に、資金調達のプロフェッショナルであるアウル経済におまかせいただければ幸いです。</p>
         </div>
       </div>
+      <a href="#contact"><button class="button jelly inside"><img src="img/btn__top.svg" alt="無料相談はこちら"></button></a>
       <div class="flex workPhoto">
         <div><img src="img/staff_08.jpg" alt="代表ワーク風景"></div>
         <div><img src="img/staff_09.jpg" alt="女性社員ワーク風景"></div>
@@ -444,17 +449,7 @@
       </dl>
     </div>
   </section>
-  <footer>
-    <div class="widthKeeper flex">
-      <div class="left">
-        <div><img src="img/logo_white.svg" alt=""></div>
-        <p>アウル経済の請求書買取り</p>
-      </div>
-      <div class="right">
-        <a href="policy.php">プライバシーポリシー</a>
-      </div>
-    </div>
-  </footer>
+  <?php include "footer.php"; ?>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script>
     var mySwiper = new Swiper('.swiper-container', {
@@ -464,7 +459,11 @@
       spaceBetween: 10, // スライド間の余白サイズ(ピクセル)
       direction: 'horizontal', // スライド方向。 'horizontal'(水平) か 'vertical'(垂直)。effectオプションが 'slide' 以外は無効。
       effect: 'slide', // "slide", "fade"(フェード), "cube"(キューブ回転), "coverflow"(カバーフロー) または "flip"(平面回転)
-
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+      },
       // スライダーの自動再生
       // autoplay: true 　のみなら既定値での自動再生
       autoplay: {

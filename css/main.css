@@ -59,7 +59,6 @@ body {
   font-size: 1.2rem;
   line-height: 2rem;
   color: #707070;
-  overflow-y: scroll;
   letter-spacing: 0.01rem;
 }
 
@@ -268,7 +267,7 @@ button {
   }
 }
 
-.greenH2 {
+.greenH2, main#policy h1 {
   color: #06663f;
   font-weight: bold;
   text-align: center;
@@ -277,7 +276,7 @@ button {
 }
 
 @media (max-width: 568px) {
-  .greenH2 {
+  .greenH2, main#policy h1 {
     font-size: 2.5rem;
     line-height: 3rem;
   }
@@ -312,6 +311,11 @@ a[href^="tel:"] {
   a[href^="tel:"] {
     pointer-events: auto;
   }
+}
+
+.inside {
+  display: block;
+  margin: 20px auto;
 }
 
 section#top {
@@ -584,12 +588,13 @@ section#contact .widthKeeper .contactBox .right .btnArea button a img {
 @media (max-width: 568px) {
   section#contact .widthKeeper .contactBox .right .btnArea button a img {
     width: 80px;
+    margin-left: 10px;
   }
 }
 
 section#contact .widthKeeper .contactBox .right .btnArea button a p {
   color: #fff;
-  font-size: 2rem;
+  font-size: 2.7rem;
   width: 70%;
   font-weight: bold;
 }
@@ -603,7 +608,7 @@ section#contact .widthKeeper .contactBox .right .btnArea button a p {
 @media (max-width: 568px) {
   section#contact .widthKeeper .contactBox .right .btnArea button a p {
     width: 100%;
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
 }
 
@@ -625,6 +630,7 @@ section#contact .widthKeeper .contactBox .right .btnArea button:last-of-type a i
   section#contact .widthKeeper .contactBox .right .btnArea button:last-of-type a img {
     width: 67px;
     padding-left: 0;
+    margin-left: 0;
   }
 }
 
@@ -763,6 +769,11 @@ section#why #whyFlex img {
   }
 }
 
+section#why .paleGreenBg {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 @media (max-width: 768px) {
   section#why .paleGreenBg .widthKeeper {
     -webkit-box-orient: vertical;
@@ -896,6 +907,16 @@ section#flow .widthKeeper .flex div:last-of-type:after {
   display: none;
 }
 
+section#voice .swiper-container {
+  padding-bottom: 50px;
+}
+
+@media (max-width: 568px) {
+  section#voice .swiper-container {
+    padding-bottom: 0;
+  }
+}
+
 section#voice .voicePanel {
   border: 1px solid #2ab076;
   padding: 30px;
@@ -906,7 +927,7 @@ section#voice .voicePanel {
 
 @media (max-width: 568px) {
   section#voice .voicePanel {
-    min-height: 400px;
+    min-height: 500px;
   }
 }
 
@@ -973,7 +994,7 @@ section#staff .widthKeeper .staffBox {
 @media (max-width: 568px) {
   section#staff .widthKeeper .staffBox {
     width: 95%;
-    margin: 0 auto 75px;
+    margin: 0 auto 30px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1214,6 +1235,7 @@ section#company #companyInfo dl dt {
   section#company #companyInfo dl dt {
     text-align: center;
     width: 100%;
+    padding-left: 0;
   }
 }
 
@@ -1324,6 +1346,13 @@ footer .widthKeeper .left div {
   padding-bottom: 0;
 }
 
+@media (max-width: 568px) {
+  footer .widthKeeper .left div {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
 footer .widthKeeper .left p {
   color: #fff;
   font-weight: bold;
@@ -1355,5 +1384,40 @@ footer .widthKeeper .right a {
   footer .widthKeeper .right a {
     text-align: center;
   }
+}
+
+main#policy h1 {
+  margin-bottom: 50px;
+  line-height: 3rem;
+  margin-top: 50px;
+}
+
+main#policy section p {
+  margin-bottom: 30px;
+}
+
+main#policy section dl {
+  margin-bottom: 30px;
+}
+
+main#policy section dl dt {
+  font-weight: bold;
+}
+
+main#policy section dl dd {
+  margin-bottom: 20px;
+}
+
+main#policy section dl dd ul li {
+  padding-left: 20px;
+}
+
+main#policy section dl#policyInfo dt {
+  text-align: right;
+}
+
+main#policy section dl#policyInfo dd {
+  margin-bottom: 0;
+  text-align: right;
 }
 /*# sourceMappingURL=main.css.map */

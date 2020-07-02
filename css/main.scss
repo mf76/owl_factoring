@@ -99,7 +99,6 @@ body {
   font-size: 1.2rem;
   line-height: 2rem;
   color: $grey;
-  overflow-y: scroll;
   letter-spacing: 0.01rem;
 }
 a {
@@ -296,6 +295,10 @@ a[href^="tel:"] {
     pointer-events: auto;
   }
 }
+.inside {
+  display: block;
+  margin: 20px auto;
+}
 //　アウル経済の個別
 
 section#top {
@@ -487,11 +490,12 @@ section#contact {
                 display: block;
                 @include sp {
                   width: 80px;
+                  margin-left: 10px;
                 }
               }
               p {
                 color: #fff;
-                font-size: 2rem;
+                font-size: 2.7rem;
                 width: 70%;
                 font-weight: bold;
                 @include tab {
@@ -499,7 +503,7 @@ section#contact {
                 }
                 @include sp {
                   width: 100%;
-                  font-size: 2rem;
+                  font-size: 2.1rem;
                 }
               }
             }
@@ -515,6 +519,7 @@ section#contact {
                 @include sp {
                   width: 67px;
                   padding-left: 0;
+                  margin-left: 0;
                 }
               }
             }
@@ -619,6 +624,8 @@ section#why {
     }
   }
   .paleGreenBg {
+    padding-top: 30px;
+    padding-bottom: 30px;
     .widthKeeper {
       @include tab {
         flex-direction: column;
@@ -714,6 +721,12 @@ section#flow {
   }
 }
 section#voice {
+  .swiper-container {
+    padding-bottom: 50px;
+    @include sp {
+      padding-bottom: 0;
+    }
+  }
   .voicePanel {
     border: 1px solid #2ab076;
     padding: 30px;
@@ -721,7 +734,7 @@ section#voice {
     height: auto;
     min-height: 620px;
     @include sp {
-      min-height: 400px;
+      min-height: 500px;
     }
     & > p {
       margin-top: 15px;
@@ -775,7 +788,7 @@ section#staff {
       min-height: 400px;
       @include sp {
         width: 95%;
-        margin: 0 auto 75px;
+        margin: 0 auto 30px;
         flex-direction: column;
         padding: 30px 25px;
       }
@@ -936,6 +949,7 @@ section#company {
         @include sp {
           text-align: center;
           width: 100%;
+          padding-left: 0;
         }
       }
       dd {
@@ -997,6 +1011,10 @@ footer {
         margin-right: 20px;
         margin-bottom: 0;
         padding-bottom: 0;
+        @include sp {
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
       }
       p {
         color: #fff;
@@ -1017,6 +1035,43 @@ footer {
         text-align: right;
         @include sp {
           text-align: center;
+        }
+      }
+    }
+  }
+}
+
+main#policy {
+  h1 {
+    @extend .greenH2;
+    margin-bottom: 50px;
+    line-height: 3rem;
+    margin-top: 50px;
+  }
+  section {
+    p {
+      margin-bottom: 30px;
+    }
+    dl {
+      margin-bottom: 30px;
+      dt {
+        font-weight: bold;
+      }
+      dd {
+        margin-bottom: 20px;
+        ul {
+          li {
+            padding-left: 20px;
+          }
+        }
+      }
+      &#policyInfo {
+        dt {
+          text-align: right;
+        }
+        dd {
+          margin-bottom: 0;
+          text-align: right;
         }
       }
     }
