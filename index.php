@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>アウル経済の請求書買い取り</title>
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
 </head>
 
 <body>
@@ -454,7 +454,7 @@
     </div>
   </section>
   <?php include "footer.php"; ?>
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="js/swiper.min.js"></script>
   <script>
     var mySwiper = new Swiper('.swiper-container', {
       loop: true, // 最後のスライドまで到達した場合、最初に戻らずに続けてスライド可能にするか。
