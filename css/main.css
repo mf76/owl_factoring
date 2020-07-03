@@ -613,6 +613,8 @@ section#contact .widthKeeper .contactBox .right .btnArea button a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 

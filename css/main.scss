@@ -511,6 +511,7 @@ section#contact {
               height: 125px;
               @include sp {
                 flex-direction: column;
+                justify-content: space-around;
               }
               div {
                 width: 100px;
