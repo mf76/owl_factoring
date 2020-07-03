@@ -56,7 +56,7 @@
               </label>
             </p>
 
-            <button><input type="submit" name="btnSubmit" value="診断する"></button>
+            <button><input type="submit" name="診断希望" value="診断する"></button>
           </form>
 
         </div>
@@ -71,7 +71,7 @@
               </a>
             </button>
             <button>
-              <a href="https://page.line.me/065gwzlz" target="_blank">
+              <a href="https://lin.ee/bsFvmE3p" target="_blank">
                 <div><img src="img/contact__img_line.svg" alt=""></div>
                 <p>お問い合わせ</p>
               </a>
@@ -315,7 +315,7 @@
           <details>
             <summary>Q.買取最低金額はありますか？</summary>
             <div>
-              <p>原則100万円以上からとなっています。</p>
+              <p>原則10万円以上からとなっています。</p>
             </div>
           </details>
         </li>

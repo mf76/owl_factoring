@@ -61,6 +61,7 @@ $widthSp: 568px; //スマートフォン
   word-wrap: break-word;
   background-repeat: no-repeat;
   overflow-wrap: break-word;
+  background-position: center;
 }
 html,
 body,
@@ -1082,4 +1083,59 @@ main#policy {
       }
     }
   }
+}
+.formTable {
+  tbody {
+    margin: 0 auto;
+    display: block;
+  }
+  tr {
+    border-bottom: 1px solid #eaeaea;
+  }
+  th {
+    text-align: center;
+  }
+  td {
+    text-align: center;
+  }
+}
+#mail_btn_submit {
+  background: -moz-linear-gradient(78.96% 189.86% 135deg, rgba(249, 85, 3, 1) 0.04%, rgba(249, 135, 3, 1) 99.58%);
+  background: -webkit-linear-gradient(135deg, rgba(249, 85, 3, 1) 0.04%, rgba(249, 135, 3, 1) 99.58%);
+  background: -webkit-gradient(
+    linear,
+    78.96% 189.86%,
+    21.04% -89.86%,
+    color-stop(0.0004, rgba(249, 85, 3, 1)),
+    color-stop(0.9958, rgba(249, 135, 3, 1))
+  );
+  background: -o-linear-gradient(135deg, rgba(249, 85, 3, 1) 0.04%, rgba(249, 135, 3, 1) 99.58%);
+  background: -ms-linear-gradient(135deg, rgba(249, 85, 3, 1) 0.04%, rgba(249, 135, 3, 1) 99.58%);
+  background: linear-gradient(-45deg, rgba(249, 85, 3, 1) 0.04%, rgba(249, 135, 3, 1) 99.58%);
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  width: 300px;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 1px 1px 5px grey;
+  margin-top: 15px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+#mail_btn_prev {
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  width: 200px;
+  color: #5d5d5d;
+  font-weight: bold;
+  -webkit-box-shadow: 1px 1px 5px grey;
+  box-shadow: 1px 1px 5px grey;
+  margin-top: 30px;
+  background: #d0d0d0;
+  text-align: center;
+  margin-bottom: 50px;
 }
