@@ -63,6 +63,12 @@ $widthSp: 568px; //スマートフォン
   overflow-wrap: break-word;
   background-position: center;
 }
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
 html,
 body,
 h1,
@@ -263,6 +269,7 @@ button {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 50px;
+  line-height: 4rem;
   @include sp {
     font-size: 2rem;
     line-height: 3rem;
@@ -1082,6 +1089,17 @@ main#policy {
         }
       }
     }
+  }
+}
+#mainContact {
+  padding-top: 50px;
+  padding-bottom: 180px;
+  text-align: center;
+  min-height: 100%;
+  .returnTop {
+    font-weight: bold;
+    margin-top: 100px;
+    text-decoration: underline;
   }
 }
 .formTable {
