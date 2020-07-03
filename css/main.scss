@@ -307,8 +307,24 @@ a[href^="tel:"] {
   }
 }
 .inside {
-  display: block;
-  margin: 20px auto;
+  background: linear-gradient(-45deg, #f95503 0.04%, #f98703 99.58%);
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: bold;
+  -webkit-box-shadow: 1px 1px 5px grey;
+  box-shadow: 1px 1px 5px grey;
+  cursor: pointer;
+  margin: 50px auto;
+  width: 50%;
+  border: 6px outset #d65915;
+  @include sp {
+    width: 300px;
+  }
+  &:hover {
+    background: linear-gradient(45deg, #f95503 0.04%, #f98703 99.58%);
+  }
 }
 //　アウル経済の個別
 
@@ -500,7 +516,7 @@ section#contact {
                 width: 100px;
                 display: block;
                 @include sp {
-                  width: 80px;
+                  width: 90px;
                   padding-left: 10px;
                 }
               }
@@ -845,6 +861,7 @@ section#ceo {
     justify-content: space-between;
     @include sp {
       flex-direction: column;
+      flex-flow: column-reverse;
     }
     .left {
       width: 60%;

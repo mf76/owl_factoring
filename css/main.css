@@ -330,8 +330,28 @@ a[href^="tel:"] {
 }
 
 .inside {
-  display: block;
-  margin: 20px auto;
+  background: linear-gradient(-45deg, #f95503 0.04%, #f98703 99.58%);
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: bold;
+  -webkit-box-shadow: 1px 1px 5px grey;
+  box-shadow: 1px 1px 5px grey;
+  cursor: pointer;
+  margin: 50px auto;
+  width: 50%;
+  border: 6px outset #d65915;
+}
+
+@media (max-width: 568px) {
+  .inside {
+    width: 300px;
+  }
+}
+
+.inside:hover {
+  background: linear-gradient(45deg, #f95503 0.04%, #f98703 99.58%);
 }
 
 section#top {
@@ -603,7 +623,7 @@ section#contact .widthKeeper .contactBox .right .btnArea button a div {
 
 @media (max-width: 568px) {
   section#contact .widthKeeper .contactBox .right .btnArea button a div {
-    width: 80px;
+    width: 90px;
     padding-left: 10px;
   }
 }
@@ -1079,6 +1099,8 @@ section#ceo .widthKeeper {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-flow: column-reverse;
+        flex-flow: column-reverse;
   }
 }
 

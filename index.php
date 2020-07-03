@@ -137,7 +137,9 @@
           <img src="img/why__img_sign.jpg" alt="サインする男性">
         </div>
       </div>
-      <a href="#contact"><button class="button jelly inside"><img src="img/btn__top.svg" alt="無料相談はこちら"></button></a>
+      <a href="#contact"><button class="button jelly inside">
+          無料相談はこちら
+        </button></a>
     </div>
 
   </section>
@@ -268,7 +270,9 @@
             お客様のビジネスを持続する為に、資金調達のプロフェッショナルであるアウル経済におまかせいただければ幸いです。</p>
         </div>
       </div>
-      <a href="#contact"><button class="button jelly inside"><img src="img/btn__top.svg" alt="無料相談はこちら"></button></a>
+      <a href="#contact"><button class="button jelly inside">
+          無料相談はこちら
+        </button></a>
       <div class="flex workPhoto">
         <div><img src="img/staff_08.jpg" alt="代表ワーク風景"></div>
         <div><img src="img/staff_09.jpg" alt="女性社員ワーク風景"></div>
